@@ -1,0 +1,6 @@
+{
+  "name": "Hadi Cloud",
+  "description": "Next-generation PWA cloud storage and file management with Liquid Glass UI",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
