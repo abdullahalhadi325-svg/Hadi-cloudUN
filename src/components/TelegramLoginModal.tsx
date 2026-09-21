@@ -196,12 +196,12 @@ export const TelegramLoginModal: React.FC<TelegramLoginModalProps> = ({
   const isFade = theme === 'fade';
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-md p-4 transition-all">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-4 transition-all">
       <div className="absolute inset-0" onClick={onClose} />
 
       <div
         id="telegram-auth-modal"
-        className="w-full max-w-sm rounded-3xl p-6 bg-[#18181b]/90 backdrop-blur-2xl border border-white/10 shadow-2xl text-white overflow-hidden transform-gpu animate-in zoom-in-95 duration-200"
+        className="w-full max-w-sm rounded-3xl p-6 bg-white dark:bg-[#18181b] border border-slate-200 dark:border-white/10 shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200"
       >
         {/* Header */}
         <div className="flex items-center justify-between mb-5">

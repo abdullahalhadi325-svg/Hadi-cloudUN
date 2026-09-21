@@ -60,15 +60,6 @@ export default function App() {
         theme === 'light' ? 'bg-slate-100 text-black' : theme === 'fade' ? 'bg-[#12151B] text-[#E2E8F0]' : 'bg-[#0A0A0A] text-white'
       }`}
     >
-      {/* iOS 27 Liquid Glass Background Gradient & Ambient Glow Mesh */}
-      {theme !== 'light' && (
-        <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-          <div className="absolute -top-[20%] -left-[10%] w-[65vw] h-[65vw] rounded-full bg-gradient-to-br from-indigo-900/25 via-purple-900/20 to-transparent blur-[110px] transform-gpu will-change-transform" />
-          <div className="absolute top-[40%] -right-[15%] w-[60vw] h-[60vw] rounded-full bg-gradient-to-tl from-purple-900/20 via-sky-900/15 to-transparent blur-[120px] transform-gpu will-change-transform" />
-          <div className="absolute -bottom-[20%] left-[20%] w-[50vw] h-[50vw] rounded-full bg-gradient-to-tr from-indigo-950/30 to-transparent blur-[90px] transform-gpu will-change-transform" />
-        </div>
-      )}
-
       {/* Top Header Navbar */}
       <Navbar 
         currentTab={currentTab} 

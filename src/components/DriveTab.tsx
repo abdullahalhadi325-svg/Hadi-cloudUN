@@ -194,13 +194,14 @@ export const DriveTab: React.FC<DriveTabProps> = ({ onOpenLoginModal }) => {
   };
 
   return (
-    <div 
-      id="drive-tab-container" 
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-      className="w-full max-w-2xl mx-auto px-4 sm:px-6 pt-2 animate-in fade-in slide-in-from-bottom-4 duration-300 ease-out"
-    >
+    <>
+      <div
+        id="drive-tab-container"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        className="w-full max-w-2xl mx-auto px-4 sm:px-6 pt-2 animate-in fade-in slide-in-from-bottom-4 duration-300 ease-out"
+      >
       {/* Pull To Refresh Indicator */}
       {(pullDistance > 0 || isRefreshing) && (
         <div 
@@ -563,19 +564,6 @@ export const DriveTab: React.FC<DriveTabProps> = ({ onOpenLoginModal }) => {
         </div>
       )}
 
-      {/* Floating '+' Button Just Above the Nav Deck */}
-      <div id="btn-floating-plus"
-        onClick={() => {
-          triggerHaptic(20);
-          setIsUploadModalOpen(true);
-        }}
-        className="fixed bottom-28 right-6 z-[90] flex items-center justify-center w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-xl border border-white/30 text-white shadow-[0_8px_32px_rgba(0,0,0,0.5)] active:scale-95 transition-transform will-change-transform transform-gpu"
-        aria-label="Add new file"
-        title="Upload File to Hadi Cloud"
-      >
-        <Plus className="w-6 h-6 text-white stroke-[2.5px]" />
-      </div>
-
       {/* File Action Centered Modal */}
       <FileActionSheet
         file={selectedFileForActions}
@@ -604,6 +592,18 @@ export const DriveTab: React.FC<DriveTabProps> = ({ onOpenLoginModal }) => {
 
       {/* Developer Signature */}
       <DeveloperSignature />
-    </div>
+      </div>
+
+      {/* Floating '+' Button Just Above the Nav Deck */}
+      <div id="btn-floating-plus"
+        onClick={() => {
+          triggerHaptic(20);
+          setIsUploadModalOpen(true);
+        }}
+        className="fixed bottom-24 right-6 z-[100] flex items-center justify-center w-14 h-14 rounded-2xl bg-sky-500 text-white shadow-[0_8px_32px_rgba(0,0,0,0.4)] active:scale-95 transition-transform"
+      >
+        <Plus className="w-6 h-6" />
+      </div>
+    </>
   );
 };
