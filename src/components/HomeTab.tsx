@@ -16,7 +16,7 @@ export const HomeTab: React.FC<HomeTabProps> = ({ onNavigate, onOpenLogin }) => 
   const isLight = theme === 'light';
 
   return (
-    <div id="home-tab-container" className="w-full max-w-2xl mx-auto px-4 sm:px-6 pt-2 pb-40 animate-in fade-in slide-in-from-bottom-4 duration-300 ease-out">
+    <div id="home-tab-container" className="w-full max-w-2xl mx-auto px-4 sm:px-6 pt-2 animate-in fade-in slide-in-from-bottom-4 duration-300 ease-out">
       {/* Welcome Card */}
       <div className={`rounded-3xl liquid-glass-ios p-5 sm:p-6 mb-5 animate-ios-fade-up ${
         isLight ? 'bg-white/85 border-slate-200 text-slate-900 shadow-sm' : 'text-white'

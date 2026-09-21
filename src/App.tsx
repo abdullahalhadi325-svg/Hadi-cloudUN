@@ -79,7 +79,7 @@ export default function App() {
       <ProgressToast />
 
       {/* Main Scrollable View Area */}
-      <main className="flex-1 w-full relative pb-32 z-10">
+      <main className="flex-1 w-full relative pb-32">
         {currentTab === 'Home' && (
           <HomeTab 
             onNavigate={setCurrentTab} 

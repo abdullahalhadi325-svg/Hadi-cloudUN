@@ -199,7 +199,7 @@ export const DriveTab: React.FC<DriveTabProps> = ({ onOpenLoginModal }) => {
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-      className="w-full max-w-2xl mx-auto px-4 sm:px-6 pt-2 pb-40 animate-in fade-in slide-in-from-bottom-4 duration-300 ease-out"
+      className="w-full max-w-2xl mx-auto px-4 sm:px-6 pt-2 animate-in fade-in slide-in-from-bottom-4 duration-300 ease-out"
     >
       {/* Pull To Refresh Indicator */}
       {(pullDistance > 0 || isRefreshing) && (
@@ -569,7 +569,7 @@ export const DriveTab: React.FC<DriveTabProps> = ({ onOpenLoginModal }) => {
           triggerHaptic(20);
           setIsUploadModalOpen(true);
         }}
-        className="fixed bottom-28 right-6 z-[90] flex items-center justify-center w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-xl border border-white/20 text-white shadow-[0_8px_32px_rgba(0,0,0,0.3)] active:scale-95 transition-transform will-change-transform"
+        className="fixed bottom-28 right-6 z-[90] flex items-center justify-center w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-xl border border-white/30 text-white shadow-[0_8px_32px_rgba(0,0,0,0.5)] active:scale-95 transition-transform will-change-transform transform-gpu"
         aria-label="Add new file"
         title="Upload File to Hadi Cloud"
       >

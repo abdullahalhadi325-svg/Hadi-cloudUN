@@ -211,10 +211,10 @@ export const UploadModal: React.FC<UploadModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-xl transition-all">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-md p-4 transition-all">
       <div className="absolute inset-0" onClick={() => !isUploading && onClose()} />
 
-      <div id="upload-modal" className="w-11/12 max-w-md rounded-3xl p-6 bg-[#18181b]/90 backdrop-blur-3xl border border-white/10 shadow-2xl transform-gpu">
+      <div id="upload-modal" className="w-full max-w-sm rounded-3xl p-6 bg-[#18181b]/90 backdrop-blur-2xl border border-white/10 shadow-2xl text-white overflow-hidden transform-gpu animate-in zoom-in-95 duration-200">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2.5">
             <div className="w-9 h-9 rounded-2xl flex items-center justify-center border bg-white/10 border-white/20 text-white">
