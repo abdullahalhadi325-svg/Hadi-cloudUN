@@ -564,19 +564,17 @@ export const DriveTab: React.FC<DriveTabProps> = ({ onOpenLoginModal }) => {
       )}
 
       {/* Floating '+' Button Just Above the Nav Deck */}
-      <button
-        id="btn-floating-plus"
-        type="button"
+      <div id="btn-floating-plus"
         onClick={() => {
           triggerHaptic(20);
           setIsUploadModalOpen(true);
         }}
-        className="fixed bottom-28 right-6 z-[60] flex items-center justify-center w-14 h-14 rounded-2xl bg-[#ffffff]/15 backdrop-blur-xl border border-white/20 text-white shadow-lg active:scale-95 transition-all"
+        className="fixed bottom-28 right-6 z-[90] flex items-center justify-center w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-xl border border-white/20 text-white shadow-[0_8px_32px_rgba(0,0,0,0.3)] active:scale-95 transition-transform will-change-transform"
         aria-label="Add new file"
         title="Upload File to Hadi Cloud"
       >
         <Plus className="w-6 h-6 text-white stroke-[2.5px]" />
-      </button>
+      </div>
 
       {/* File Action Centered Modal */}
       <FileActionSheet

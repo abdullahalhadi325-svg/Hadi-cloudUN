@@ -56,7 +56,7 @@ export default function App() {
   return (
     <div 
       id="hadi-cloud-root" 
-      className={`min-h-screen flex flex-col selection:bg-white/20 transition-colors duration-200 relative overflow-x-hidden ${
+      className={`min-h-[100dvh] flex flex-col selection:bg-white/20 transition-colors duration-200 relative overflow-x-hidden ${
         theme === 'light' ? 'bg-slate-100 text-black' : theme === 'fade' ? 'bg-[#12151B] text-[#E2E8F0]' : 'bg-[#0A0A0A] text-white'
       }`}
     >
@@ -79,7 +79,7 @@ export default function App() {
       <ProgressToast />
 
       {/* Main Scrollable View Area */}
-      <main className="flex-1 w-full relative pb-40 z-10">
+      <main className="flex-1 w-full relative pb-32 z-10">
         {currentTab === 'Home' && (
           <HomeTab 
             onNavigate={setCurrentTab} 
