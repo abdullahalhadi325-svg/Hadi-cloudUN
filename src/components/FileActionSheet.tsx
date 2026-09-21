@@ -178,10 +178,10 @@ export const FileActionSheet: React.FC<FileActionSheetProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-xl transition-all">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-md p-4 transition-all">
       <div className="absolute inset-0" onClick={() => !isDownloading && onClose()} />
 
-      <div id="file-action-modal" className="w-11/12 max-w-md rounded-3xl p-6 bg-[#18181b]/90 backdrop-blur-3xl border border-white/10 shadow-2xl transform-gpu">
+      <div id="file-action-modal" className="w-full max-w-sm rounded-3xl p-6 bg-[#18181b]/90 backdrop-blur-2xl border border-white/10 shadow-2xl text-white overflow-hidden transform-gpu animate-in zoom-in-95 duration-200">
         {/* Header */}
         <div className="flex items-start justify-between gap-3 mb-4">
           <div className="flex items-center gap-3 min-w-0">

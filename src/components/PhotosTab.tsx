@@ -242,7 +242,7 @@ export const PhotosTab: React.FC = () => {
   return (
     <div 
       id="photos-tab-container" 
-      className="w-full max-w-3xl mx-auto px-2 sm:px-4 pt-2 pb-40 animate-in fade-in slide-in-from-bottom-4 duration-300 ease-out"
+      className="w-full max-w-3xl mx-auto px-2 sm:px-4 pt-2 animate-in fade-in slide-in-from-bottom-4 duration-300 ease-out"
     >
       {/* Top Header */}
       <div className="flex items-center justify-between mb-3 px-2">

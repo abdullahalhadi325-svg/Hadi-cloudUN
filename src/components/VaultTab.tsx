@@ -202,7 +202,7 @@ export const VaultTab: React.FC = () => {
   };
 
   return (
-    <div id="vault-tab-container" className="w-full max-w-2xl mx-auto px-4 sm:px-6 pt-2 pb-40 animate-in fade-in slide-in-from-bottom-4 duration-300 ease-out">
+    <div id="vault-tab-container" className="w-full max-w-2xl mx-auto px-4 sm:px-6 pt-2 animate-in fade-in slide-in-from-bottom-4 duration-300 ease-out">
       {/* Header */}
       <div className="flex items-center justify-between mb-3.5">
         <div className="flex items-center gap-2">
