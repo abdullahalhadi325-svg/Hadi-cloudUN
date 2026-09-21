@@ -152,12 +152,12 @@ export const MoveToVaultModal: React.FC<MoveToVaultModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/30 backdrop-blur-md p-4 transition-all">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-md p-4">
       <div className="absolute inset-0" onClick={() => !isProcessing && onClose()} />
 
       <div 
         id="move-to-vault-modal"
-        className="w-full max-w-sm rounded-3xl p-6 bg-white/10 backdrop-blur-3xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.5)] shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)] text-white overflow-y-auto max-h-[85vh] relative z-10 animate-in zoom-in-95 duration-200"
+        className="w-full max-w-sm rounded-3xl p-6 bg-white/10 backdrop-blur-3xl border border-white/20 shadow-[0_12px_40px_rgba(0,0,0,0.5)] shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)] text-white overflow-hidden animate-in zoom-in-95 duration-200"
       >
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">

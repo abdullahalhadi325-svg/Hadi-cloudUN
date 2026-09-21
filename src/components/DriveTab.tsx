@@ -571,7 +571,7 @@ export const DriveTab: React.FC<DriveTabProps> = ({ onOpenLoginModal }) => {
           triggerHaptic(20);
           setIsUploadModalOpen(true);
         }}
-        className="fixed bottom-24 right-6 z-[60] flex items-center justify-center w-14 h-14 rounded-2xl bg-[#ffffff]/15 backdrop-blur-xl border border-white/20 text-white shadow-lg active:scale-95 transition-all"
+        className="fixed bottom-28 right-6 z-[60] flex items-center justify-center w-14 h-14 rounded-2xl bg-[#ffffff]/15 backdrop-blur-xl border border-white/20 text-white shadow-lg active:scale-95 transition-all"
         aria-label="Add new file"
         title="Upload File to Hadi Cloud"
       >
