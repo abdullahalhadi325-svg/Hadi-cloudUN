@@ -156,6 +156,11 @@ export const PhotosTab: React.FC = () => {
       return;
     }
 
+    if (file.thumbnailUrl) {
+      setIsLoadingMedia(false);
+      return;
+    }
+
     try {
       setIsLoadingMedia(true);
       setMediaErrorToast(null);
@@ -278,7 +283,7 @@ export const PhotosTab: React.FC = () => {
           const isVideo = photo.type === 'video';
           const blurhashVal = photo.blurhash || FALLBACK_BLURHASHES[index % FALLBACK_BLURHASHES.length];
           const hasLoadedRealImage = !!(loadedImagesMap[photo.id] && loadedImagesMap[photo.id].length > 0);
-          const rawSrc = hasLoadedRealImage ? loadedImagesMap[photo.id] : null;
+          const rawSrc = hasLoadedRealImage ? loadedImagesMap[photo.id] : (photo.thumbnailUrl || null);
 
           return (
             <div
@@ -416,7 +421,7 @@ export const PhotosTab: React.FC = () => {
             {(photos || []).map((p, idx) => {
               if (!p) return null;
               const isCurrent = idx === selectedPhotoIndex;
-              const photoSrc = loadedImagesMap[p.id];
+              const photoSrc = loadedImagesMap[p.id] || p.thumbnailUrl;
               const pBlurhash = p.blurhash || FALLBACK_BLURHASHES[idx % FALLBACK_BLURHASHES.length];
 
               return (
